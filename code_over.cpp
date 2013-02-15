@@ -55,7 +55,7 @@ int main()
 			getline(source, lineStr);
 			if (lineStr == "\tsystem(\"g++ code_over.cpp -o main\");")
 			{
-				newSrc << "\tsystem(\"g++ code_over_2.cpp -o main2\");\n";
+				newSrc << "\tsystem(\"g++ code_over_2.cpp -o main\");\n";
 			}
 			else
 			{
@@ -72,6 +72,6 @@ int main()
 	}
 	newSrc.close();
 	source.close();
-	system("g++ code_over_2.cpp -o main2");
+	system("g++ code_over_2.cpp -o main");
 	return 0;
 }
